@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #000;
+  color: #fff;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@layer utilities {
+  .gradient-text {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(to bottom,#E2E8F8, #858992);
+  }
+}
+
+.gradient-text2 {
+  background: linear-gradient(to right, #7687B5, #91B0FF, #E2E8F8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.border-bottom-gradient1 {
+  border-bottom: 1px solid transparent;
+  background-image: linear-gradient(white, white),
+                    linear-gradient(to left, #0D111A, #5C73AE);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+.border-bottom-gradient2 {
+  border-bottom: 1px solid transparent;
+  background-image: linear-gradient(white, white),
+                    linear-gradient(to right, #0D111A, #5C73AE);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+.gradient-text3 {
+  background: linear-gradient(to left, #5C73AE, #FFFFFF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.border-gradient {
+  background: linear-gradient(to right, #0C0F16, #788DC5, #0C0F16);
+}
+
+.border-gradient2 {
+  background: linear-gradient(to top, #0C0F16, #788DC5, #0C0F16);
+}
